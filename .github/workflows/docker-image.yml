@@ -7,7 +7,7 @@ on:
 jobs:
 
   build:
-
+    if: ${{ github.event.label.name == 'internal_release' }}
     runs-on: ubuntu-latest
 
     steps:
